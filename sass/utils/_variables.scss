@@ -1,0 +1,23 @@
+:root {
+  --blue-text: rgba(33, 150, 243, 1);
+  --blue-text9: rgba(33, 150, 243, 0.9);
+  --black-text: rgba(33, 33, 33, 1);
+  --black-text20: rgba(33, 33, 33, 0.2);
+  --grey-text: rgba(117, 117, 117, 1);
+  --grey-text5: rgba(117, 117, 117, 0.5);
+  --white-text60: rgba(255, 255, 255, 0.6);
+  --white-text100: rgba(255, 255, 255, 1);
+  --white-text01: rgba(255, 255, 255, 0.1);
+  --white-text30: rgba(255, 255, 255, 0.3);
+
+  --background-grey: rgba(47, 48, 58, 1);
+  --background-grey8: rgba(47, 48, 58, 0.8);
+  --background-white: rgba(245, 244, 250, 1);
+  --logo-webstudio__studio: rgba(0, 0, 0, 1);
+  --border-color: rgba(236, 236, 236, 1);
+  --grey-social-links: rgba(175, 177, 184, 1);
+}
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
