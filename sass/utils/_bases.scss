@@ -21,19 +21,27 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-// .container--flex {
-//   display: flex;
-//   width: 1200px;
-//   padding: 0 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.container--flex {
+  display: flex;
+}
 
-// .container--no-flex {
-//   width: 1200px;
-//   padding: 0 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px;
+  max-width: 480px;
+
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}

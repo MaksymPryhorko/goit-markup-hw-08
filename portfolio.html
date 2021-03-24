@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container--flex page-header__container">
+        <div class="container container--flex page-header__container">
             <a href="#" class="logo-webstudio">Web<span class="logo-webstudio__studio">Studio</span></a>
             <nav class="page-header__site-nav">
                 <ul class="nav-list">
@@ -38,9 +38,10 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="page-header__mobileMenu-button">
-                <svg class="" width="40px" height="40px">
-                    <use href="./images/icons.svg#icon-mobile-menu"></use>
+            <button type="button" class="page-header__mobileMenu-button" aria-expanded="false" aria-controls="mobile-menu"
+                js-open-menu>
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu " href="./images/icons.svg#icon-mobile-menu"></use>
                 </svg>
             </button>
         </div>
@@ -48,7 +49,7 @@
     <main>
         <section class="portfolio">
             <h1 class="visually-hidden">Примеры наших работ</h1>
-                <div class="container--flex portfolio__buttons-container">
+                <div class="container portfolio__buttons-container">
                     <ul class="portfolio__buttons-list">
                         <li class="portfolio__buttons-item">
                             <button class="portfolio__buttons" type="button">Все</button>
@@ -67,11 +68,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container--no-flex portfolio__sites-container--position">
+                <div class="container portfolio__sites-container--position">
                     <ul class="portfolio__works-list">
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/technokryak.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/technokryak.jpg 1x, ./images/portfolio/technokryak@2x.jpg 2x" src="./images/technokryak.jpg" alt="img">
                                 <div class="portfolio__info-container"> 
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -84,7 +85,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/poster.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/poster.jpg 1x, ./images/portfolio/poster@2x.jpg 2x" src="./images/poster.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -97,7 +98,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/restaurant.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/restaurant.jpg 1x, ./images/portfolio/restaurant@2x.jpg 2x" src="./images/restaurant.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -111,7 +112,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/prime.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime@2x.jpg 2x" src="./images/prime.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -125,7 +126,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/box.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/box.jpg 1x, ./images/portfolio/box@2x.jpg 2x" src="./images/box.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -139,7 +140,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                               <img src="./images/borders.jpg" alt="img">
+                               <img class="portfolio__img" srcset="./images/portfolio/borders.jpg 1x, ./images/portfolio/borders@2x.jpg 2x" src="./images/borders.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -153,7 +154,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/limitededition.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/limitededition.jpg 1x, ./images/portfolio/limitededition@2x.jpg 2x" src="./images/limitededition.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -167,7 +168,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/lab.jpg" alt="img">
+                                <img class="portfolio__img" srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab@2x.jpg 2x" src="./images/lab.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -181,7 +182,7 @@
                         </li>
                         <li class="portfolio__works-item">
                             <div class="portfolio__photos-container">
-                                <img src="./images/business.jpg" alt="img">
+                                <img  class="portfolio__img" srcset="./images/portfolio/business.jpg 1x, ./images/portfolio/business@2x.jpg 2x" src="./images/business.jpg" alt="img">
                                 <div class="portfolio__info-container">
                                     <p class="portfolio__info-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
                                         цифрового
@@ -197,11 +198,53 @@
                 </div>
             
         </section>
+        <div class="container-menu" id="mobile-menu" js-menu-container>
+            <button type="button" class="page-header__mobileMenu-buttonClose" js-close-menu>
+                <svg width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="burger-nav">
+                <ul class="burger-nav__list">
+                    <li class="burger-nav__item"><a class="burger-nav__link burger-nav__link--current"
+                            href="./index.html">Студия</a></li>
+                    <li class="burger-nav__item"><a class="burger-nav__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="burger-nav__item"><a class="burger-nav__link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="burger-contact__list">
+                <li class="burger-contact__item">
+                    <a class="burger-contact__link burger-contact__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="burger-contact__item">
+                    <a class="burger-contact__link burger-contact__link--mail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="burger-socialNetworks__list">
+                <li class="burger-socialNetworks__item">
+                    <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                        href="https://www.instagram.com/">Instagram</a>
+                </li>
+                <li class="burger-socialNetworks__item">
+                    <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                        href="https://www.twitter.com/">Twitter</a>
+                </li>
+                <li class="burger-socialNetworks__item">
+                    <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                        href="https://www.facebook.com/">Facebook</a>
+                </li>
+                <li class="burger-socialNetworks__item">
+                    <a class="burger-socialNetworks__link" href="https://www.linkedin.com/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer class="footer" id="contacts">
-        <div class="container--flex footer__container--position">
-            <div>
-                <a href="#" class="logo-webstudio">Web<span class="logo-webstudio__studio-footer">Studio</span></a>
+        <div class="container footer__container--position">
+            <div class="container__logo-adress">
+                <a href="#" class="logo-webstudio logo-webstudio ">Web<span
+                        class="logo-webstudio__studio-footer">Studio</span></a>
                 <address class="footer__address">
                     <a class="footer__link-address" href="#">г. Киев, пр-т Леси Украинки, 26</a><br>
                     <a class="footer__link-contact" href="mailto:info@example.com">info@example.com</a><br>
@@ -254,5 +297,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

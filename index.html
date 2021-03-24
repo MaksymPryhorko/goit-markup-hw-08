@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container--flex page-header__container" >
+        <div class="container container--flex page-header__container" >
             <a href="#" class="logo-webstudio">Web<span class="logo-webstudio__studio">Studio</span></a>
             <nav class="page-header__site-nav">
                 <ul class="nav-list">
@@ -37,26 +37,22 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="page-header__mobileMenu-button" aria-expanded="false" aria-controls="container-menu" data-menu-button>
-                <svg class="" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <button type="button" class="page-header__mobileMenu-button" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
+                <svg  width="40px" height="40px" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu " href="./images/icons.svg#icon-mobile-menu"></use>
-                    <use class="icon-close" href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <div class="container-menu" id="container-menu" data-menu>
-                Контент
-            </div>
         </div>
     </header>
     <main>
         <section class="main-section">
-            <div class="container--no-flex">
+            <div class="container">
                 <h1 class="main-section__title">Эффективные решения <br>для вашего бизнеса</h1>
                 <button class="main-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantages">
-            <div class="container--no-flex">
+            <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">
@@ -101,25 +97,25 @@
             </div>
         </section>
         <section class="studio" id="studio">
-            <div class="container--no-flex">
+            <div class="container">
                 <h2 class="studio__title">Чем мы занимаемся</h2>
             </div>
-            <div class="container--no-flex studio__container">
+            <div class="container studio__container">
                     <ul class="studio__list">
                         <li class="studio__item">
-                            <img src="./images/photo1.jpg" alt="img" width="370">
+                            <img srcset="./images/studio/photo1.jpg 1x, ./images/studio/photo1@2x.jpg 2x" src="./images/studio/photo1.jpg" alt="img" width="370">
                             <div class="studio__container-text">
                                 <p class="studio__text">десктопные приложения</p>
                             </div>
                         </li>
                         <li class="studio__item">
-                            <img src="./images/photo2.jpg" alt="img" width="370">
+                            <img srcset="./images/studio/photo2.jpg 1x, ./images/studio/photo2@2x.jpg 2x"  src="./images/studio/photo2.jpg" alt="img" width="370">
                             <div class="studio__container-text">
                                 <p class="studio__text">мобильные приложения</p>
                             </div>
                         </li>
                         <li class="studio__item">
-                            <img src="./images/photo3.jpg" alt="img" width="370">
+                            <img srcset="./images/studio/photo3.jpg 1x, ./images/studio/photo3@2x.jpg 2x"  src="./images/studio/photo3.jpg" alt="img" width="370">
                             <div class="studio__container-text">
                                 <p class="studio__text">дизайнерские решения</p>
                             </div>
@@ -128,13 +124,13 @@
             </div>
         </section>
         <section class="team"  id="portfolio">
-            <div class="container--no-flex">
+            <div class="container">
                 <h2 class="team__title">Наша команда</h2>
             </div>
-            <div class="container--no-flex team__container">
+            <div class="container team__container">
                     <ul class="team__list">
                         <li  class="team__item">
-                            <img src="./images/productdesigner.jpg" alt="img" width="270">
+                            <img class="team__img" srcset="./images/team/productdesigner.jpg 1x, ./images/team/productdesigner@2x.jpg 2x" src="./images/productdesigner.jpg" alt="img" width="450">
                             <h3 class="team__names">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
                             <div class="social-networks-container">
@@ -175,7 +171,7 @@
                             </div>
                         </li>
                         <li  class="team__item">
-                            <img src="./images/frontenddeveloper.jpg" alt="img" width="270">
+                            <img class="team__img"  srcset="./images/team/frontenddeveloper.jpg 1x, ./images/team/frontenddeveloper@2x.jpg 2x" src="./images/frontenddeveloper.jpg" alt="img" width="450">
                             <h3 class="team__names">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
                             <div class="social-networks-container">
@@ -216,7 +212,7 @@
                             </div>
                         </li>
                         <li  class="team__item">
-                            <img src="./images/marketing.jpg" alt="img" width="270">
+                            <img class="team__img" srcset="./images/team/marketing.jpg 1x, ./images/team/marketing@2x.jpg 2x" src="./images/marketing.jpg" alt="img" width="450">
                             <h3 class="team__names">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
                             <div class="social-networks-container">
@@ -257,7 +253,7 @@
                             </div>
                         </li>
                         <li  class="team__item">
-                            <img src="./images/uidesigner.jpg" alt="img" width="270">
+                            <img class="team__img" srcset="./images/team/uidesigner.jpg 1x, ./images/team/uidesigner@2x.jpg 2x" src="./images/uidesigner.jpg" alt="img" width="450">
                             <h3 class="team__names">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
                             <div class="social-networks-container">
@@ -301,10 +297,10 @@
             </div>
         </section>
         <section class="clients">
-            <div class="container--no-flex">
+            <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
             </div>
-            <div class="container--no-flex clients__container">
+            <div class="container clients__container">
                 <ul class= "clients__list">
                     <li class="clients__item">
                         <a class="clients__link" href="#">
@@ -404,11 +400,52 @@
                 </button>
             </div>
         </div>
+        <div class="container-menu" id="mobile-menu" js-menu-container>
+                <button type="button" class="page-header__mobileMenu-buttonClose" js-close-menu>
+                    <svg width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="burger-nav">
+                    <ul class="burger-nav__list">
+                        <li class="burger-nav__item"><a class="burger-nav__link burger-nav__link--current"
+                                href="./index.html">Студия</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="burger-contact__list">
+                    <li class="burger-contact__item">
+                        <a class="burger-contact__link burger-contact__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="burger-contact__item">
+                        <a class="burger-contact__link burger-contact__link--mail"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="burger-socialNetworks__list">
+                    <li class="burger-socialNetworks__item">
+                        <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                            href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li class="burger-socialNetworks__item">
+                        <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                            href="https://www.twitter.com/">Twitter</a>
+                    </li>
+                    <li class="burger-socialNetworks__item">
+                        <a class="burger-socialNetworks__link burger-socialNetworks__link--line"
+                            href="https://www.facebook.com/">Facebook</a>
+                    </li>
+                    <li class="burger-socialNetworks__item">
+                        <a class="burger-socialNetworks__link" href="https://www.linkedin.com/">LinkedIn</a>
+                    </li>
+                </ul>
+        </div>
     </main>
     <footer class="footer" id="contacts">
-        <div class="container--flex footer__container--position">
-            <div>
-                <a href="#" class="logo-webstudio">Web<span class="logo-webstudio__studio-footer">Studio</span></a>
+        <div class="container footer__container--position">
+            <div class="container__logo-adress">
+                <a href="#" class="logo-webstudio logo-webstudio ">Web<span class="logo-webstudio__studio-footer">Studio</span></a>
                 <address class="footer__address">
                     <a class="footer__link-address" href="#">г. Киев, пр-т Леси Украинки, 26</a><br>
                     <a class="footer__link-contact" href="mailto:info@example.com">info@example.com</a><br>
