@@ -37,6 +37,12 @@ footer {
 
 .footer__link-contact {
   color: var(--white-text60);
+  display: block;
+  margin-top: 8px;
+
+  @media (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 
 .footer__container {
